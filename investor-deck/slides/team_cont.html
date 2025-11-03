@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advisory Board - Articulate AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+            padding: 60px 80px;
+        }
+        
+        .gradient-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.06) 0%, rgba(245, 158, 11, 0.06) 100%);
+            clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        
+        .geometric-shape-1 {
+            position: absolute;
+            top: 100px;
+            left: 80px;
+            width: 180px;
+            height: 180px;
+            background: linear-gradient(45deg, #7C3AED 0%, #06B6D4 100%);
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+            opacity: 0.05;
+        }
+        
+        .geometric-shape-2 {
+            position: absolute;
+            bottom: 80px;
+            right: 80px;
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, #F59E0B 0%, #EF4444 100%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            opacity: 0.08;
+        }
+        
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+        }
+        
+        .slide-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: #1A1A2E;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+        
+        .slide-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: #2D3748;
+            line-height: 1.4;
+            margin-bottom: 40px;
+            max-width: 1000px;
+        }
+        
+        .section-label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #1A1A2E;
+            margin-bottom: 20px;
+        }
+        
+        .advisors-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .advisor-card {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.04) 0%, rgba(124, 58, 237, 0.04) 100%);
+            padding: 25px;
+            position: relative;
+        }
+        
+        .advisor-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #F59E0B 0%, #7C3AED 100%);
+        }
+        
+        .advisor-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #1A1A2E;
+            margin-bottom: 6px;
+        }
+        
+        .advisor-expertise {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            color: #F59E0B;
+            margin-bottom: 8px;
+        }
+        
+        .advisor-background {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: #2D3748;
+            line-height: 1.5;
+        }
+        
+        .team-philosophy {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.06) 0%, rgba(245, 158, 11, 0.06) 100%);
+            padding: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .philosophy-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #1A1A2E;
+            margin-bottom: 12px;
+        }
+        
+        .philosophy-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #2D3748;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="gradient-overlay"></div>
+        <div class="geometric-shape-1"></div>
+        <div class="geometric-shape-2"></div>
+        
+        <div class="content-wrapper">
+            <h2 class="slide-title">Advisory Board</h2>
+            <p class="slide-heading">Industry veterans providing strategic guidance across AI, enterprise sales, and voice technology</p>
+            
+            <div class="section-label">Strategic Advisors</div>
+            <div class="advisors-grid">
+                <div class="advisor-card">
+                    <div class="advisor-name">AI Research Advisor</div>
+                    <div class="advisor-expertise">Conversational AI</div>
+                    <div class="advisor-background">Former Director at leading AI research lab, 50+ publications in NLP</div>
+                </div>
+                
+                <div class="advisor-card">
+                    <div class="advisor-name">Enterprise Sales Advisor</div>
+                    <div class="advisor-expertise">B2B SaaS GTM</div>
+                    <div class="advisor-background">Built sales org at unicorn SaaS company, $200M+ in enterprise revenue</div>
+                </div>
+                
+                <div class="advisor-card">
+                    <div class="advisor-name">Voice Tech Advisor</div>
+                    <div class="advisor-expertise">Speech Technology</div>
+                    <div class="advisor-background">Pioneer in voice AI, founded and exited voice tech startup to Fortune 500</div>
+                </div>
+                
+                <div class="advisor-card">
+                    <div class="advisor-name">Contact Center Advisor</div>
+                    <div class="advisor-expertise">CX Operations</div>
+                    <div class="advisor-background">Former VP Operations at global contact center provider, 10K+ agents</div>
+                </div>
+            </div>
+            
+            <div class="team-philosophy">
+                <div class="philosophy-title">Our Approach</div>
+                <div class="philosophy-text">
+                    We combine deep technical expertise with real-world business experience. Our team has built AI systems at scale, sold to enterprises, and understands the operational challenges our customers face. This unique blend of skills positions us to build not just great technology, but a sustainable, customer-focused business.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

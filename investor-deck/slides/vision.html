@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision & Roadmap - Articulate AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+            padding: 60px 80px;
+        }
+        
+        .gradient-background {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.05) 0%, rgba(245, 158, 11, 0.05) 100%);
+            clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        
+        .geometric-shape-1 {
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            width: 180px;
+            height: 180px;
+            background: linear-gradient(45deg, #7C3AED 0%, #06B6D4 100%);
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+            opacity: 0.05;
+        }
+        
+        .geometric-shape-2 {
+            position: absolute;
+            bottom: 60px;
+            right: 80px;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, #F59E0B 0%, #EF4444 100%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            opacity: 0.08;
+        }
+        
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+        }
+        
+        .slide-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: #1A1A2E;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+        
+        .vision-statement {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 26px;
+            font-weight: 600;
+            color: #7C3AED;
+            line-height: 1.4;
+            margin-bottom: 40px;
+            max-width: 1000px;
+        }
+        
+        .roadmap-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .phase-card {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.04) 0%, rgba(245, 158, 11, 0.04) 100%);
+            padding: 20px 25px;
+            position: relative;
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            gap: 25px;
+            align-items: start;
+        }
+        
+        .phase-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(180deg, #7C3AED 0%, #F59E0B 100%);
+        }
+        
+        .phase-header {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .phase-timeline {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #7C3AED;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .phase-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #1A1A2E;
+            line-height: 1.3;
+        }
+        
+        .phase-content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .phase-description {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            color: #2D3748;
+            line-height: 1.6;
+        }
+        
+        .phase-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 5px;
+        }
+        
+        .phase-item {
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            color: #2D3748;
+            background: rgba(124, 58, 237, 0.08);
+            padding: 6px 12px;
+        }
+        
+        .long-term-vision {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.08) 0%, rgba(245, 158, 11, 0.08) 100%);
+            padding: 25px;
+            margin-top: 10px;
+            border-left: 5px solid #7C3AED;
+        }
+        
+        .long-term-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #1A1A2E;
+            margin-bottom: 10px;
+        }
+        
+        .long-term-description {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            color: #2D3748;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="gradient-background"></div>
+        <div class="geometric-shape-1"></div>
+        <div class="geometric-shape-2"></div>
+        
+        <div class="content-wrapper">
+            <h2 class="slide-title">Vision & Roadmap</h2>
+            <p class="vision-statement">Building the global standard for AI-powered business communication</p>
+            
+            <div class="roadmap-container">
+                <div class="phase-card">
+                    <div class="phase-header">
+                        <div class="phase-timeline">Year 1-2</div>
+                        <div class="phase-title">Voice Agent Foundation</div>
+                    </div>
+                    <div class="phase-content">
+                        <div class="phase-description">
+                            Establish market leadership in AI voice agents with enterprise-grade quality, no-code platform, and seamless CRM integrations. Build brand recognition and customer base.
+                        </div>
+                        <div class="phase-items">
+                            <div class="phase-item">Premium Voice Platform</div>
+                            <div class="phase-item">CRM Integrations</div>
+                            <div class="phase-item">Analytics Dashboard</div>
+                            <div class="phase-item">API Access</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="phase-card">
+                    <div class="phase-header">
+                        <div class="phase-timeline">Year 2-3</div>
+                        <div class="phase-title">Multi-Modal Expansion</div>
+                    </div>
+                    <div class="phase-content">
+                        <div class="phase-description">
+                            Expand beyond voice to create unified AI communication platform covering all customer interaction channels with consistent quality and intelligence.
+                        </div>
+                        <div class="phase-items">
+                            <div class="phase-item">AI Chat Agents</div>
+                            <div class="phase-item">Email Automation</div>
+                            <div class="phase-item">SMS Integration</div>
+                            <div class="phase-item">Omnichannel Routing</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="phase-card">
+                    <div class="phase-header">
+                        <div class="phase-timeline">Year 3-5</div>
+                        <div class="phase-title">Industry Solutions & Global Scale</div>
+                    </div>
+                    <div class="phase-content">
+                        <div class="phase-description">
+                            Launch vertical-specific solutions with deep domain expertise and expand internationally with localized language support and regional partnerships.
+                        </div>
+                        <div class="phase-items">
+                            <div class="phase-item">Healthcare Solutions</div>
+                            <div class="phase-item">Financial Services</div>
+                            <div class="phase-item">Real Estate</div>
+                            <div class="phase-item">Multi-Language Support</div>
+                            <div class="phase-item">Global Expansion</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="long-term-vision">
+                <div class="long-term-title">Long-Term Vision: Platform Ecosystem</div>
+                <div class="long-term-description">
+                    Transform Articulate AI into a comprehensive platform ecosystem where developers, agencies, and enterprises can build custom AI communication solutions. Launch API marketplace, white-label offerings, and partner program to create network effects and accelerate growth beyond Year 5.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Opportunity - Articulate AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+            padding: 60px 80px;
+        }
+        
+        .gradient-overlay-left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40%;
+            height: 100%;
+            background: linear-gradient(225deg, rgba(124, 58, 237, 0.06) 0%, rgba(6, 182, 212, 0.06) 100%);
+            clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+        }
+        
+        .geometric-accent-top {
+            position: absolute;
+            top: -80px;
+            right: 150px;
+            width: 250px;
+            height: 250px;
+            background: linear-gradient(135deg, #F59E0B 0%, #EF4444 100%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            opacity: 0.08;
+            transform: rotate(25deg);
+        }
+        
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+        }
+        
+        .slide-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: #1A1A2E;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+        
+        .slide-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 26px;
+            font-weight: 600;
+            color: #2D3748;
+            line-height: 1.4;
+            margin-bottom: 40px;
+            max-width: 1000px;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .data-section {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        .market-stat-large {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.08) 0%, rgba(245, 158, 11, 0.08) 100%);
+            padding: 25px;
+            border-left: 5px solid #7C3AED;
+        }
+        
+        .stat-label-small {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #7C3AED;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        
+        .stat-value-large {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            font-weight: 800;
+            color: #1A1A2E;
+            line-height: 1.1;
+            margin-bottom: 5px;
+        }
+        
+        .stat-description {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #2D3748;
+            line-height: 1.5;
+        }
+        
+        .chart-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .chart-wrapper {
+            width: 100%;
+            max-width: 500px;
+            min-height: 420px;
+            position: relative;
+        }
+        
+        .chart-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .chart-caption {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: #2D3748;
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="gradient-overlay-left"></div>
+        <div class="geometric-accent-top"></div>
+        
+        <div class="content-wrapper">
+            <h2 class="slide-title">Market Opportunity</h2>
+            <p class="slide-heading">A $50 billion market growing at 46% annually presents unprecedented opportunity</p>
+            
+            <div class="main-content">
+                <div class="data-section">
+                    <div class="market-stat-large">
+                        <div class="stat-label-small">Market Size Growth</div>
+                        <div class="stat-value-large">$7.84B → $52.62B</div>
+                        <div class="stat-description">AI Agents Market (2025-2030)</div>
+                    </div>
+                    
+                    <div class="market-stat-large" style="border-left-color: #F59E0B;">
+                        <div class="stat-label-small" style="color: #F59E0B;">Compound Annual Growth Rate</div>
+                        <div class="stat-value-large">46.3% CAGR</div>
+                        <div class="stat-description">Explosive growth trajectory through 2030</div>
+                    </div>
+                </div>
+                
+                <div class="chart-section">
+                    <div class="chart-wrapper">
+                        <img src="/home/ubuntu/upload/search_images/FJ5jDkomeHpK.jpg" alt="Market Growth Chart">
+                    </div>
+                    <div class="chart-caption">Year-over-year market expansion trajectory</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

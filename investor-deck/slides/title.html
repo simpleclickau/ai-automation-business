@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articulate AI - Investor Presentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(135deg, #7C3AED 0%, #06B6D4 100%);
+            clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+            opacity: 0.95;
+        }
+        
+        .geometric-shape-1 {
+            position: absolute;
+            top: -100px;
+            right: 200px;
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(45deg, #F59E0B 0%, #EF4444 100%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            opacity: 0.15;
+            transform: rotate(15deg);
+        }
+        
+        .geometric-shape-2 {
+            position: absolute;
+            bottom: -80px;
+            right: -50px;
+            width: 300px;
+            height: 300px;
+            background: #7C3AED;
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+            opacity: 0.1;
+        }
+        
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 720px;
+            padding: 80px 100px;
+        }
+        
+        .text-content {
+            flex: 1;
+            max-width: 600px;
+        }
+        
+        .main-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 64px;
+            font-weight: 800;
+            color: #1A1A2E;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+        
+        .tagline {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 32px;
+            font-weight: 500;
+            color: #7C3AED;
+            margin-bottom: 30px;
+            letter-spacing: -0.5px;
+        }
+        
+        .subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            color: #2D3748;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+        
+        .accent-line {
+            width: 120px;
+            height: 6px;
+            background: linear-gradient(90deg, #7C3AED 0%, #F59E0B 100%);
+            margin-bottom: 30px;
+            border-radius: 3px;
+        }
+        
+        .image-container {
+            position: relative;
+            z-index: 15;
+            width: 450px;
+            height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 20px 40px rgba(124, 58, 237, 0.3));
+        }
+        
+        .presentation-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #7C3AED;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="gradient-overlay"></div>
+        <div class="geometric-shape-1"></div>
+        <div class="geometric-shape-2"></div>
+        
+        <div class="content-wrapper">
+            <div class="text-content">
+                <div class="presentation-label">Investor Presentation</div>
+                <div class="accent-line"></div>
+                <h1 class="main-title">Articulate AI</h1>
+                <p class="tagline">Every word, perfected.</p>
+                <p class="subtitle">The Gold Standard in AI-Powered Communication</p>
+            </div>
+            
+            <div class="image-container">
+                <img src="/home/ubuntu/upload/search_images/cGPi8QogYNQu.png" alt="AI Voice Communication">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

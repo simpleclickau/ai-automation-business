@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Drivers - Articulate AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+            padding: 60px 80px;
+        }
+        
+        .gradient-overlay-right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 45%;
+            height: 100%;
+            background: linear-gradient(225deg, rgba(245, 158, 11, 0.06) 0%, rgba(124, 58, 237, 0.06) 100%);
+            clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        
+        .geometric-shape-1 {
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(45deg, #7C3AED 0%, #06B6D4 100%);
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+            opacity: 0.05;
+        }
+        
+        .geometric-shape-2 {
+            position: absolute;
+            bottom: 60px;
+            right: 100px;
+            width: 180px;
+            height: 180px;
+            background: linear-gradient(135deg, #F59E0B 0%, #EF4444 100%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            opacity: 0.08;
+        }
+        
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+        }
+        
+        .slide-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: #1A1A2E;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+        
+        .slide-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: #2D3748;
+            line-height: 1.4;
+            margin-bottom: 40px;
+            max-width: 1000px;
+        }
+        
+        .drivers-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        .driver-card {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.04) 0%, rgba(245, 158, 11, 0.04) 100%);
+            padding: 30px;
+            position: relative;
+        }
+        
+        .driver-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(180deg, #7C3AED 0%, #F59E0B 100%);
+        }
+        
+        .driver-card:nth-child(2)::before,
+        .driver-card:nth-child(4)::before {
+            background: linear-gradient(180deg, #F59E0B 0%, #7C3AED 100%);
+        }
+        
+        .driver-stat {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 52px;
+            font-weight: 800;
+            color: #7C3AED;
+            line-height: 1;
+            margin-bottom: 12px;
+            letter-spacing: -1px;
+        }
+        
+        .driver-card:nth-child(2) .driver-stat,
+        .driver-card:nth-child(4) .driver-stat {
+            color: #F59E0B;
+        }
+        
+        .driver-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #1A1A2E;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        
+        .driver-description {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            color: #2D3748;
+            line-height: 1.6;
+        }
+        
+        .driver-accent {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #7C3AED 0%, #06B6D4 100%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            opacity: 0.08;
+        }
+        
+        .driver-card:nth-child(2) .driver-accent,
+        .driver-card:nth-child(4) .driver-accent {
+            background: linear-gradient(135deg, #F59E0B 0%, #EF4444 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="gradient-overlay-right"></div>
+        <div class="geometric-shape-1"></div>
+        <div class="geometric-shape-2"></div>
+        
+        <div class="content-wrapper">
+            <h2 class="slide-title">Market Drivers</h2>
+            <p class="slide-heading">Four powerful forces are accelerating market adoption and creating unprecedented opportunity</p>
+            
+            <div class="drivers-grid">
+                <div class="driver-card">
+                    <div class="driver-accent"></div>
+                    <div class="driver-stat">97%</div>
+                    <div class="driver-title">Enterprise AI Adoption</div>
+                    <div class="driver-description">
+                        Nearly all enterprises are actively exploring voice AI adoption, creating massive demand for enterprise-grade solutions that can scale across organizations.
+                    </div>
+                </div>
+                
+                <div class="driver-card">
+                    <div class="driver-accent"></div>
+                    <div class="driver-stat">Human-Like</div>
+                    <div class="driver-title">LLM Capabilities</div>
+                    <div class="driver-description">
+                        Recent advances in large language models enable natural, context-aware conversations that were impossible just two years ago, making AI voice agents truly viable.
+                    </div>
+                </div>
+                
+                <div class="driver-card">
+                    <div class="driver-accent"></div>
+                    <div class="driver-stat">24/7</div>
+                    <div class="driver-title">Always-On Service Demand</div>
+                    <div class="driver-description">
+                        Businesses need round-the-clock customer service without proportional cost increases. AI voice agents deliver this capability at a fraction of traditional costs.
+                    </div>
+                </div>
+                
+                <div class="driver-card">
+                    <div class="driver-accent"></div>
+                    <div class="driver-stat">60-80%</div>
+                    <div class="driver-title">Proven Cost Reduction</div>
+                    <div class="driver-description">
+                        Early adopters report 60-80% cost reduction versus traditional call centers, with improved consistency and scalability, creating compelling ROI for new customers.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

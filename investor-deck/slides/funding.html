@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funding Requirements - Articulate AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+            padding: 60px 80px;
+        }
+        
+        .gradient-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 45%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.06) 0%, rgba(245, 158, 11, 0.06) 100%);
+            clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+        }
+        
+        .geometric-shape-1 {
+            position: absolute;
+            top: 100px;
+            right: 100px;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(45deg, #7C3AED 0%, #06B6D4 100%);
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+            opacity: 0.06;
+        }
+        
+        .geometric-shape-2 {
+            position: absolute;
+            bottom: 80px;
+            right: 80px;
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, #F59E0B 0%, #EF4444 100%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            opacity: 0.08;
+        }
+        
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+        }
+        
+        .slide-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: #1A1A2E;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+        
+        .slide-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: #2D3748;
+            line-height: 1.4;
+            margin-bottom: 40px;
+            max-width: 1000px;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 50px;
+        }
+        
+        .funding-highlight {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .funding-ask {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.08) 0%, rgba(245, 158, 11, 0.08) 100%);
+            padding: 40px;
+        }
+        
+        .funding-ask::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 6px;
+            height: 100%;
+            background: #7C3AED;
+        }
+        
+        .ask-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #7C3AED;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        
+        .ask-amount {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 72px;
+            font-weight: 800;
+            color: #1A1A2E;
+            line-height: 1;
+            margin-bottom: 15px;
+        }
+        
+        .ask-description {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: #2D3748;
+            line-height: 1.6;
+        }
+        
+        .runway-info {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, rgba(124, 58, 237, 0.08) 100%);
+            padding: 30px;
+        }
+        
+        .runway-info::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 6px;
+            height: 100%;
+            background: #F59E0B;
+        }
+        
+        .runway-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #F59E0B;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        
+        .runway-value {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            font-weight: 800;
+            color: #1A1A2E;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+        
+        .runway-description {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: #2D3748;
+        }
+        
+        .milestones-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .section-label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #1A1A2E;
+            margin-bottom: 10px;
+        }
+        
+        .milestones-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        
+        .milestone-card {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.04) 0%, rgba(245, 158, 11, 0.04) 100%);
+            padding: 20px 25px;
+            position: relative;
+        }
+        
+        .milestone-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(180deg, #7C3AED 0%, #F59E0B 100%);
+        }
+        
+        .milestone-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: #7C3AED;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .milestone-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: #2D3748;
+            line-height: 1.6;
+        }
+        
+        .transition-note {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.06) 0%, rgba(245, 158, 11, 0.06) 100%);
+            padding: 18px 25px;
+            margin-top: 15px;
+            text-align: center;
+        }
+        
+        .transition-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #7C3AED;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="gradient-overlay"></div>
+        <div class="geometric-shape-1"></div>
+        <div class="geometric-shape-2"></div>
+        
+        <div class="content-wrapper">
+            <h2 class="slide-title">Funding Requirements</h2>
+            <p class="slide-heading">Seed round to accelerate product development and customer acquisition</p>
+            
+            <div class="main-content">
+                <div class="funding-highlight">
+                    <div class="funding-ask">
+                        <div class="ask-label">Raising Seed Round</div>
+                        <div class="ask-amount">$2.5M</div>
+                        <div class="ask-description">
+                            Strategic capital to build world-class product, scale go-to-market operations, and achieve profitability
+                        </div>
+                    </div>
+                    
+                    <div class="runway-info">
+                        <div class="runway-label">Runway to Profitability</div>
+                        <div class="runway-value">18 Months</div>
+                        <div class="runway-description">Achieving cash flow positive in Month 24</div>
+                    </div>
+                </div>
+                
+                <div class="milestones-section">
+                    <div class="section-label">Key Milestones</div>
+                    
+                    <div class="milestones-grid">
+                        <div class="milestone-card">
+                            <div class="milestone-number">Milestone 1</div>
+                            <div class="milestone-text">Launch MVP and onboard first 100 customers</div>
+                        </div>
+                        
+                        <div class="milestone-card">
+                            <div class="milestone-number">Milestone 2</div>
+                            <div class="milestone-text">Achieve $1M ARR by Month 12</div>
+                        </div>
+                        
+                        <div class="milestone-card">
+                            <div class="milestone-number">Milestone 3</div>
+                            <div class="milestone-text">Build sales team and establish partner ecosystem</div>
+                        </div>
+                        
+                        <div class="milestone-card">
+                            <div class="milestone-number">Milestone 4</div>
+                            <div class="milestone-text">Reach profitability and prepare for Series A</div>
+                        </div>
+                    </div>
+                    
+                    <div class="transition-note">
+                        <div class="transition-text">Detailed capital deployment breakdown follows →</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

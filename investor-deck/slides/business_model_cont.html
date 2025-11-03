@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Economics - Articulate AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+            padding: 60px 80px;
+        }
+        
+        .diagonal-accent {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.06) 0%, rgba(124, 58, 237, 0.06) 100%);
+            clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        
+        .geometric-shape {
+            position: absolute;
+            bottom: 60px;
+            left: 60px;
+            width: 180px;
+            height: 180px;
+            background: linear-gradient(45deg, #7C3AED 0%, #06B6D4 100%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            opacity: 0.08;
+        }
+        
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+        }
+        
+        .slide-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: #1A1A2E;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+        
+        .slide-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: #2D3748;
+            line-height: 1.4;
+            margin-bottom: 35px;
+            max-width: 1000px;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        
+        .metrics-section {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        .section-label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #1A1A2E;
+            margin-bottom: 15px;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+        
+        .metric-item {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.05) 0%, rgba(124, 58, 237, 0.05) 100%);
+            padding: 20px;
+            position: relative;
+        }
+        
+        .metric-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #F59E0B 0%, #7C3AED 100%);
+        }
+        
+        .metric-value {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #F59E0B;
+            margin-bottom: 6px;
+        }
+        
+        .metric-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: #2D3748;
+        }
+        
+        .revenue-streams {
+            margin-top: 10px;
+        }
+        
+        .stream-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        
+        .stream-bullet {
+            width: 5px;
+            height: 5px;
+            background: #7C3AED;
+            border-radius: 50%;
+            margin-top: 7px;
+            flex-shrink: 0;
+        }
+        
+        .stream-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            color: #2D3748;
+            line-height: 1.5;
+        }
+        
+        .visual-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .image-wrapper {
+            width: 100%;
+            min-height: 480px;
+            position: relative;
+        }
+        
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="diagonal-accent"></div>
+        <div class="geometric-shape"></div>
+        
+        <div class="content-wrapper">
+            <h2 class="slide-title">Unit Economics</h2>
+            <p class="slide-heading">Strong unit economics and multiple revenue streams drive sustainable growth</p>
+            
+            <div class="main-content">
+                <div class="metrics-section">
+                    <div class="section-label">Key Financial Metrics</div>
+                    <div class="metrics-grid">
+                        <div class="metric-item">
+                            <div class="metric-value">56-78%</div>
+                            <div class="metric-label">Gross Margin</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">12:1</div>
+                            <div class="metric-label">LTV:CAC Ratio</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">$0.22</div>
+                            <div class="metric-label">Cost per 5-min Call</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">$6,000</div>
+                            <div class="metric-label">Customer LTV</div>
+                        </div>
+                    </div>
+                    
+                    <div class="revenue-streams">
+                        <div class="section-label">Revenue Streams</div>
+                        <div class="stream-item">
+                            <div class="stream-bullet"></div>
+                            <div class="stream-text">Subscription revenue from tiered monthly plans</div>
+                        </div>
+                        <div class="stream-item">
+                            <div class="stream-bullet"></div>
+                            <div class="stream-text">Usage revenue from per-minute call charges</div>
+                        </div>
+                        <div class="stream-item">
+                            <div class="stream-bullet"></div>
+                            <div class="stream-text">Integration fees for custom CRM connections</div>
+                        </div>
+                        <div class="stream-item">
+                            <div class="stream-bullet"></div>
+                            <div class="stream-text">Professional services and implementation support</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="visual-section">
+                    <div class="image-wrapper">
+                        <img src="/home/ubuntu/upload/search_images/55JPWqwMXV23.webp" alt="Financial metrics dashboard">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

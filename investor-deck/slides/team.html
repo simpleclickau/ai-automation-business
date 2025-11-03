@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Team - Articulate AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+            padding: 45px 80px;
+        }
+        
+        .gradient-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.06) 0%, rgba(245, 158, 11, 0.06) 100%);
+            clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        
+        .geometric-shape-1 {
+            position: absolute;
+            top: 100px;
+            left: 80px;
+            width: 180px;
+            height: 180px;
+            background: linear-gradient(45deg, #7C3AED 0%, #06B6D4 100%);
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+            opacity: 0.05;
+        }
+        
+        .geometric-shape-2 {
+            position: absolute;
+            bottom: 80px;
+            right: 80px;
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, #F59E0B 0%, #EF4444 100%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            opacity: 0.08;
+        }
+        
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+        }
+        
+        .slide-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: #1A1A2E;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+        
+        .slide-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: #2D3748;
+            line-height: 1.4;
+            margin-bottom: 25px;
+            max-width: 1000px;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 35px;
+        }
+        
+        .team-section {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .section-label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #1A1A2E;
+            margin-bottom: 6px;
+        }
+        
+        .founders-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 14px;
+        }
+        
+        .team-member {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.04) 0%, rgba(245, 158, 11, 0.04) 100%);
+            padding: 14px 18px;
+            position: relative;
+        }
+        
+        .team-member::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #7C3AED 0%, #F59E0B 100%);
+        }
+        
+        .member-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #1A1A2E;
+            margin-bottom: 4px;
+        }
+        
+        .member-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #7C3AED;
+            margin-bottom: 7px;
+        }
+        
+        .member-bio {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: #2D3748;
+            line-height: 1.4;
+        }
+        
+        .visual-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .image-wrapper {
+            width: 100%;
+            min-height: 400px;
+            position: relative;
+        }
+        
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .transition-note {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.05) 0%, rgba(245, 158, 11, 0.05) 100%);
+            padding: 12px 18px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        
+        .transition-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #7C3AED;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="gradient-overlay"></div>
+        <div class="geometric-shape-1"></div>
+        <div class="geometric-shape-2"></div>
+        
+        <div class="content-wrapper">
+            <h2 class="slide-title">The Team</h2>
+            <p class="slide-heading">Experienced founders with proven track records in AI, SaaS, and enterprise sales</p>
+            
+            <div class="main-content">
+                <div class="team-section">
+                    <div class="section-label">Founding Team</div>
+                    <div class="founders-grid">
+                        <div class="team-member">
+                            <div class="member-name">Leadership Team</div>
+                            <div class="member-title">CEO & Co-Founder</div>
+                            <div class="member-bio">
+                                15+ years in AI product development and SaaS leadership. Previously led product teams at enterprise AI companies, scaling from seed to Series C. Deep expertise in conversational AI and natural language processing.
+                            </div>
+                        </div>
+                        
+                        <div class="team-member">
+                            <div class="member-name">Technical Leadership</div>
+                            <div class="member-title">CTO & Co-Founder</div>
+                            <div class="member-bio">
+                                PhD in Machine Learning with 12+ years building production AI systems. Former engineering leader at voice technology companies. Expert in real-time speech processing, LLM integration, and scalable cloud architectures.
+                            </div>
+                        </div>
+                        
+                        <div class="team-member">
+                            <div class="member-name">Business Operations</div>
+                            <div class="member-title">COO & Co-Founder</div>
+                            <div class="member-bio">
+                                20+ years in enterprise SaaS sales and operations. Built and scaled sales teams from 0 to $50M ARR at multiple B2B SaaS companies. Expertise in go-to-market strategy, channel partnerships, and customer success.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="transition-note">
+                        <div class="transition-text">Advisory board and team philosophy follows →</div>
+                    </div>
+                </div>
+                
+                <div class="visual-section">
+                    <div class="image-wrapper">
+                        <img src="/home/ubuntu/upload/search_images/J3dhPgQu8tBe.jpg" alt="Business and Professional Communication">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

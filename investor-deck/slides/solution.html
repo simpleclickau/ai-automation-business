@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Solution - Articulate AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+            padding: 50px 80px;
+        }
+        
+        .gradient-background {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.06) 0%, rgba(6, 182, 212, 0.06) 100%);
+            clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        
+        .geometric-shape-1 {
+            position: absolute;
+            top: 80px;
+            left: 100px;
+            width: 180px;
+            height: 180px;
+            background: linear-gradient(45deg, #F59E0B 0%, #EF4444 100%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            opacity: 0.08;
+        }
+        
+        .geometric-shape-2 {
+            position: absolute;
+            bottom: 60px;
+            left: 50px;
+            width: 150px;
+            height: 150px;
+            background: #7C3AED;
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+            opacity: 0.06;
+        }
+        
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+        }
+        
+        .slide-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: #1A1A2E;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+        
+        .slide-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 26px;
+            font-weight: 600;
+            color: #2D3748;
+            line-height: 1.4;
+            margin-bottom: 30px;
+            max-width: 950px;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: center;
+        }
+        
+        .image-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .image-wrapper {
+            width: 100%;
+            max-width: 480px;
+            min-height: 340px;
+            position: relative;
+        }
+        
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .image-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
+            z-index: -1;
+        }
+        
+        .features-section {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        
+        .solution-description {
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: #2D3748;
+            line-height: 1.7;
+            margin-bottom: 5px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 14px;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 12px;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.03) 0%, rgba(245, 158, 11, 0.03) 100%);
+        }
+        
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #7C3AED 0%, #06B6D4 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        }
+        
+        .feature-icon-inner {
+            width: 36px;
+            height: 36px;
+            background: #FFFFFF;
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: #7C3AED;
+        }
+        
+        .feature-content {
+            flex: 1;
+        }
+        
+        .feature-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #1A1A2E;
+            margin-bottom: 4px;
+        }
+        
+        .feature-description {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            color: #2D3748;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="gradient-background"></div>
+        <div class="geometric-shape-1"></div>
+        <div class="geometric-shape-2"></div>
+        
+        <div class="content-wrapper">
+            <h2 class="slide-title">The Solution</h2>
+            <p class="slide-heading">Articulate AI delivers enterprise-grade voice agents that communicate with unparalleled clarity and professionalism</p>
+            
+            <div class="main-content">
+                <div class="image-section">
+                    <div class="image-wrapper">
+                        <div class="image-glow"></div>
+                        <img src="/home/ubuntu/upload/search_images/sBKa2RsHgxIl.png" alt="AI Voice Agent">
+                    </div>
+                </div>
+                
+                <div class="features-section">
+                    <p class="solution-description">
+                        Our cloud-native platform enables businesses of all sizes to deploy AI-powered voice agents that handle customer conversations with the clarity, precision, and eloquence of the best human agents.
+                    </p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <div class="feature-icon-inner">1</div>
+                            </div>
+                            <div class="feature-content">
+                                <div class="feature-title">No-Code Agent Builder</div>
+                                <div class="feature-description">Create and deploy voice agents in minutes without technical expertise</div>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <div class="feature-icon-inner">2</div>
+                            </div>
+                            <div class="feature-content">
+                                <div class="feature-title">Premium Voice Quality</div>
+                                <div class="feature-description">Human-like voices with emotional intelligence and natural prosody</div>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <div class="feature-icon-inner">3</div>
+                            </div>
+                            <div class="feature-content">
+                                <div class="feature-title">Seamless Integrations</div>
+                                <div class="feature-description">Native connections to CRMs, calendars, and business systems</div>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <div class="feature-icon-inner">4</div>
+                            </div>
+                            <div class="feature-content">
+                                <div class="feature-title">Real-Time Intelligence</div>
+                                <div class="feature-description">Live transcription, sentiment analysis, and conversation insights</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

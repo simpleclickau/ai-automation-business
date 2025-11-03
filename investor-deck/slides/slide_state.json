@@ -1,0 +1,164 @@
+{
+  "project_info": {
+    "title": "Articulate AI",
+    "created": 1762155437.6493602,
+    "last_updated": 1762156029.7784956,
+    "total_slides": 19
+  },
+  "slides": {
+    "title": "edited",
+    "problem": "edited",
+    "problem_cont": "edited",
+    "market": "edited",
+    "market_cont": "edited",
+    "solution": "edited",
+    "competitive_advantage": "edited",
+    "competitive_advantage_cont": "edited",
+    "business_model": "edited",
+    "business_model_cont": "edited",
+    "go_to_market": "edited",
+    "financials": "edited",
+    "funding": "edited",
+    "funding_cont": "edited",
+    "team": "edited",
+    "team_cont": "edited",
+    "traction": "edited",
+    "vision": "edited",
+    "call_to_action": "edited"
+  },
+  "outline": [
+    {
+      "id": "title",
+      "title": "Articulate AI",
+      "summary": "Cover slide introducing Articulate AI as the gold standard in AI-powered communication with the tagline 'Every word, perfected.'",
+      "image_plan": "/home/ubuntu/upload/search_images/cGPi8QogYNQu.png - The cover slide needs a strong visual representing AI and communication. Image 3 is a clean, professional isometric illustration showing a bot interacting with business people over a large smartphone, which fits the theme \"AI-Powered Communication.\"",
+      "slide_template_key": ""
+    },
+    {
+      "id": "problem",
+      "title": "The Problem",
+      "summary": "Businesses lose millions in missed opportunities due to communication gaps. Traditional call centers cost $3-5 per call with limited scalability, human agents are constrained by time zones and capacity, and customer expectations for immediate responses continue to rise.",
+      "image_plan": "/home/ubuntu/upload/search_images/EsYBJivR80P9.jpg - Image showing the contrast between human agent challenges and AI solutions, representing the communication problem.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "problem_cont",
+      "title": "The Impact",
+      "summary": "Key statistics demonstrating the scale of the problem: 75% of customers expect immediate responses, 67% of businesses struggle with service quality consistency, and 20-30% of potential revenue is lost due to missed or poorly handled calls.",
+      "slide_template_key": "",
+      "image_plan": ""
+    },
+    {
+      "id": "market",
+      "title": "Market Opportunity",
+      "summary": "The AI agents market presents a massive opportunity, growing from $7.84B in 2025 to $52.62B by 2030 at 46.3% CAGR. The growth chart visualizes this explosive expansion trajectory.",
+      "image_plan": "/home/ubuntu/upload/search_images/FJ5jDkomeHpK.jpg - Year-over-year growth chart visualizing market expansion trajectory",
+      "slide_template_key": ""
+    },
+    {
+      "id": "market_cont",
+      "title": "Market Drivers",
+      "summary": "Key market drivers fueling growth: 97% of enterprises exploring voice AI adoption, advances in LLM capabilities enabling human-like conversations, demand for 24/7 customer service without proportional cost increases, and proven ROI with 60-80% cost reduction versus traditional call centers.",
+      "slide_template_key": "",
+      "image_plan": ""
+    },
+    {
+      "id": "solution",
+      "title": "The Solution",
+      "summary": "Articulate AI delivers enterprise-grade voice agents that communicate with unparalleled clarity and professionalism through a no-code platform with seamless integrations and real-time intelligence.",
+      "image_plan": "/home/ubuntu/upload/search_images/sBKa2RsHgxIl.png - This slide introduces the solution: an enterprise-grade voice agent. Image 2 is a direct illustration of an \"AI Voice Agent\" with a human-like hologram and a phone, perfectly matching the core product.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "competitive_advantage",
+      "title": "Competitive Advantage",
+      "summary": "Three core competitive advantages create defensible moats: premium brand positioning targeting quality-focused businesses, superior technology stack with sub-800ms latency using best-in-class providers, and LLM-agnostic modular architecture enabling rapid adoption of new AI capabilities without vendor lock-in.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "competitive_advantage_cont",
+      "title": "Market Differentiation",
+      "summary": "Comparison table showing how Articulate AI differentiates across key dimensions: SMB to Enterprise target market, best-in-class voice quality (MOS 4.5+), sub-800ms latency, excellent no-code ease of use, and tiered plus usage pricing model, compared to competitors who focus on developers or enterprise only with varying quality and complexity levels.",
+      "slide_template_key": "",
+      "image_plan": "/home/ubuntu/upload/search_images/17ERn5mW8VI0.jpg - Image showing professionals in a meeting with a communication book cover, representing strategic positioning and business communication focus."
+    },
+    {
+      "id": "business_model",
+      "title": "Business Model",
+      "summary": "Hybrid SaaS model with tiered subscriptions: Starter ($99/mo, 200 min), Professional ($299/mo, 750 min), Business ($799/mo, 2,500 min), and Enterprise (custom pricing). Usage-based overage charges range from $0.30-0.50 per minute.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "business_model_cont",
+      "title": "Unit Economics",
+      "summary": "Strong unit economics with 56-78% gross margins, 12:1 LTV:CAC ratio, $0.22 cost per 5-minute call, and $6,000 customer lifetime value. Multiple revenue streams including subscriptions, usage fees, integration fees, and professional services.",
+      "slide_template_key": "",
+      "image_plan": "/home/ubuntu/upload/search_images/55JPWqwMXV23.webp - Financial metrics dashboard visualization showing the unit economics and revenue structure."
+    },
+    {
+      "id": "go_to_market",
+      "title": "Go-to-Market Strategy",
+      "summary": "Multi-channel acquisition through digital marketing, strategic partnerships, and direct sales targets high-value customers with proven conversion paths and 120% net revenue retention.",
+      "image_plan": "/home/ubuntu/upload/search_images/bb0x8JMen8ar.png - This slide covers the Go-to-Market Strategy, which involves sales, partnerships, and direct outreach. Image 6 shows a professional business meeting and discussion, representing the execution of the GTM strategy and direct sales efforts.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "financials",
+      "title": "Financial Projections",
+      "summary": "Path to $90M ARR by Year 5 with 40% EBITDA margin. Achieving profitability in Month 24 with strong unit economics and scalable infrastructure.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "funding",
+      "title": "Funding Requirements",
+      "summary": "Seeking $2.5M seed round for 18-month runway to profitability. Prominently display the funding ask, runway timeline, and key milestones to be achieved: launch MVP and onboard first 100 customers, achieve $1M ARR by Month 12, build sales team and establish partner ecosystem, reach profitability and prepare for Series A.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "funding_cont",
+      "title": "Use of Funds",
+      "summary": "Detailed breakdown of capital deployment across four key areas: Product Development (40%, $1.0M) for engineering team and platform development, Sales & Marketing (35%, $875K) for team hiring and campaigns, Customer Success (15%, $375K) for support and onboarding, and Operations & Infrastructure (10%, $250K) for cloud infrastructure and overhead.",
+      "slide_template_key": "",
+      "image_plan": ""
+    },
+    {
+      "id": "team",
+      "title": "The Team",
+      "summary": "Introduce the founding team with three co-founders: CEO & Co-Founder with 15+ years in AI product development and SaaS leadership, previously led product teams at enterprise AI companies scaling from seed to Series C with deep expertise in conversational AI and NLP; CTO & Co-Founder with PhD in Machine Learning and 12+ years building production AI systems, former engineering leader at voice technology companies, expert in real-time speech processing, LLM integration, and scalable cloud architectures; COO & Co-Founder with 20+ years in enterprise SaaS sales and operations, built and scaled sales teams from 0 to $50M ARR at multiple B2B SaaS companies with expertise in go-to-market strategy, channel partnerships, and customer success. Include the business communication book cover image showing diverse people to represent the human expertise and communication focus.",
+      "image_plan": "/home/ubuntu/upload/search_images/J3dhPgQu8tBe.jpg - This slide introduces the founding team and their expertise. Image shows a book cover titled 'Business and Professional Communication: A Human-Centered Approach' with diverse people, subtly representing the human expertise behind the product and the focus on communication.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "team_cont",
+      "title": "Advisory Board",
+      "summary": "Present the advisory board with four key advisors: AI Research Advisor specializing in Conversational AI, former Director at leading AI research lab with 50+ publications in NLP; Enterprise Sales Advisor specializing in B2B SaaS GTM, built sales org at unicorn SaaS company with $200M+ in enterprise revenue; Voice Tech Advisor specializing in Speech Technology, pioneer in voice AI who founded and exited voice tech startup to Fortune 500; Contact Center Advisor specializing in CX Operations, former VP Operations at global contact center provider managing 10K+ agents. Include a team philosophy section emphasizing the combination of deep technical expertise with real-world business experience, highlighting that the team has built AI systems at scale, sold to enterprises, and understands operational challenges customers face.",
+      "slide_template_key": "",
+      "image_plan": ""
+    },
+    {
+      "id": "traction",
+      "title": "Traction & Validation",
+      "summary": "Early customer validation with 50+ businesses on waitlist, 10 design partner agreements, and positive pilot feedback demonstrating product-market fit.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "vision",
+      "title": "Vision & Roadmap",
+      "summary": "Building the global standard for AI-powered business communication, expanding from voice to multi-modal communication and industry-specific solutions over the next five years.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "call_to_action",
+      "title": "Join Us",
+      "summary": "Investment opportunity to join at the ground floor of a category-defining company in a market growing at 46% annually. Closing $2.5M seed round in Q1 2026.",
+      "image_plan": "",
+      "slide_template_key": ""
+    }
+  ]
+}

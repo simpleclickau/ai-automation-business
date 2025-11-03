@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Differentiation - Articulate AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+            padding: 60px 80px;
+        }
+        
+        .gradient-accent-top {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 250px;
+            background: linear-gradient(225deg, rgba(124, 58, 237, 0.06) 0%, rgba(6, 182, 212, 0.06) 100%);
+            clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        
+        .geometric-shape {
+            position: absolute;
+            bottom: 60px;
+            left: 60px;
+            width: 180px;
+            height: 180px;
+            background: linear-gradient(135deg, #F59E0B 0%, #EF4444 100%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            opacity: 0.08;
+        }
+        
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+        }
+        
+        .slide-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: #1A1A2E;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+        
+        .slide-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: #2D3748;
+            line-height: 1.4;
+            margin-bottom: 40px;
+            max-width: 1000px;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+        
+        .comparison-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .section-label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #7C3AED;
+            margin-bottom: 10px;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .comparison-table th {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            color: #1A1A2E;
+            text-align: left;
+            padding: 14px 12px;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.08) 0%, rgba(245, 158, 11, 0.08) 100%);
+        }
+        
+        .comparison-table td {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: #2D3748;
+            padding: 12px;
+            border-bottom: 1px solid #E5E7EB;
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .highlight-cell {
+            color: #7C3AED;
+            font-weight: 600;
+        }
+        
+        .description-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #2D3748;
+            line-height: 1.7;
+            margin-top: 20px;
+        }
+        
+        .image-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .image-container {
+            width: 100%;
+            height: 350px;
+            position: relative;
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        .key-takeaway {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.05) 0%, rgba(245, 158, 11, 0.05) 100%);
+            padding: 20px;
+            border-left: 4px solid #7C3AED;
+        }
+        
+        .takeaway-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: #1A1A2E;
+            margin-bottom: 8px;
+        }
+        
+        .takeaway-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: #2D3748;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="gradient-accent-top"></div>
+        <div class="geometric-shape"></div>
+        
+        <div class="content-wrapper">
+            <h2 class="slide-title">Market Differentiation</h2>
+            <p class="slide-heading">Clear differentiation across key dimensions positions Articulate AI for premium market segment</p>
+            
+            <div class="main-content">
+                <div class="comparison-section">
+                    <div class="section-label">Competitive Comparison Matrix</div>
+                    
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Dimension</th>
+                                <th>Articulate AI</th>
+                                <th>Competitors</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Target Market</td>
+                                <td class="highlight-cell">SMB to Enterprise</td>
+                                <td>Developers or Enterprise Only</td>
+                            </tr>
+                            <tr>
+                                <td>Voice Quality</td>
+                                <td class="highlight-cell">Best-in-Class (MOS 4.5+)</td>
+                                <td>Good (MOS 4.0-4.3)</td>
+                            </tr>
+                            <tr>
+                                <td>Latency</td>
+                                <td class="highlight-cell">&lt;800ms</td>
+                                <td>700ms - 1200ms</td>
+                            </tr>
+                            <tr>
+                                <td>Ease of Use</td>
+                                <td class="highlight-cell">Excellent (No-Code)</td>
+                                <td>Moderate to Complex</td>
+                            </tr>
+                            <tr>
+                                <td>Pricing Model</td>
+                                <td class="highlight-cell">Tiered + Usage</td>
+                                <td>Pure Usage or Custom</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p class="description-text">
+                        Our positioning targets the underserved mid-market segment with a no-code platform that delivers enterprise-grade quality. While competitors focus on either developers or large enterprises, we serve the full spectrum from small businesses to enterprise accounts with consistent quality and ease of use.
+                    </p>
+                </div>
+                
+                <div class="image-section">
+                    <div class="image-container">
+                        <img src="/home/ubuntu/upload/search_images/17ERn5mW8VI0.jpg" alt="Strategic positioning">
+                    </div>
+                    
+                    <div class="key-takeaway">
+                        <div class="takeaway-title">Strategic Advantage</div>
+                        <div class="takeaway-text">
+                            By combining superior technology with accessible pricing and no-code simplicity, we create a defensible position that is difficult for competitors to replicate without significant repositioning.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

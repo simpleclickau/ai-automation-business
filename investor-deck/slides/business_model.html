@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Model - Articulate AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+            padding: 45px 80px;
+        }
+        
+        .diagonal-accent {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.06) 0%, rgba(124, 58, 237, 0.06) 100%);
+            clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        
+        .geometric-shape {
+            position: absolute;
+            bottom: 60px;
+            left: 60px;
+            width: 180px;
+            height: 180px;
+            background: linear-gradient(45deg, #7C3AED 0%, #06B6D4 100%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            opacity: 0.08;
+        }
+        
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+        }
+        
+        .slide-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: #1A1A2E;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+        
+        .slide-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: #2D3748;
+            line-height: 1.4;
+            margin-bottom: 18px;
+            max-width: 1000px;
+        }
+        
+        .model-description {
+            font-family: 'Inter', sans-serif;
+            font-size: 17px;
+            font-weight: 400;
+            color: #2D3748;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            max-width: 900px;
+        }
+        
+        .section-label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #1A1A2E;
+            margin-bottom: 18px;
+        }
+        
+        .pricing-tiers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .tier-card {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.04) 0%, rgba(245, 158, 11, 0.04) 100%);
+            padding: 22px 20px;
+            position: relative;
+        }
+        
+        .tier-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(180deg, #7C3AED 0%, #F59E0B 100%);
+        }
+        
+        .tier-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #1A1A2E;
+            margin-bottom: 10px;
+        }
+        
+        .tier-price {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 32px;
+            font-weight: 800;
+            color: #7C3AED;
+            margin-bottom: 8px;
+            line-height: 1;
+        }
+        
+        .tier-card:nth-child(2) .tier-price,
+        .tier-card:nth-child(4) .tier-price {
+            color: #F59E0B;
+        }
+        
+        .tier-details {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            color: #2D3748;
+            line-height: 1.6;
+        }
+        
+        .tier-details strong {
+            font-weight: 600;
+            color: #1A1A2E;
+        }
+        
+        .model-note {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            color: #2D3748;
+            text-align: center;
+            margin-top: 25px;
+            padding: 15px 20px;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.05) 0%, rgba(245, 158, 11, 0.05) 100%);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="diagonal-accent"></div>
+        <div class="geometric-shape"></div>
+        
+        <div class="content-wrapper">
+            <h2 class="slide-title">Business Model</h2>
+            <p class="slide-heading">Hybrid SaaS model combining predictable subscription revenue with usage-based pricing</p>
+            
+            <p class="model-description">
+                Our tiered subscription model provides predictable recurring revenue while usage-based overage charges align with customer value and enable natural expansion as customers grow their call volumes.
+            </p>
+            
+            <div class="section-label">Pricing Tiers</div>
+            
+            <div class="pricing-tiers">
+                <div class="tier-card">
+                    <div class="tier-name">Starter</div>
+                    <div class="tier-price">$99<span style="font-size: 18px; font-weight: 600;">/mo</span></div>
+                    <div class="tier-details">
+                        <strong>200 minutes</strong> included<br>
+                        $0.50 per minute overage
+                    </div>
+                </div>
+                
+                <div class="tier-card">
+                    <div class="tier-name">Professional</div>
+                    <div class="tier-price">$299<span style="font-size: 18px; font-weight: 600;">/mo</span></div>
+                    <div class="tier-details">
+                        <strong>750 minutes</strong> included<br>
+                        $0.40 per minute overage
+                    </div>
+                </div>
+                
+                <div class="tier-card">
+                    <div class="tier-name">Business</div>
+                    <div class="tier-price">$799<span style="font-size: 18px; font-weight: 600;">/mo</span></div>
+                    <div class="tier-details">
+                        <strong>2,500 minutes</strong> included<br>
+                        $0.35 per minute overage
+                    </div>
+                </div>
+                
+                <div class="tier-card">
+                    <div class="tier-name">Enterprise</div>
+                    <div class="tier-price">Custom</div>
+                    <div class="tier-details">
+                        <strong>Custom volume</strong> pricing<br>
+                        $0.30 per minute rate
+                    </div>
+                </div>
+            </div>
+            
+            <div class="model-note">
+                All tiers include access to the no-code agent builder, premium voice quality, CRM integrations, and real-time analytics dashboard
+            </div>
+        </div>
+    </div>
+</body>
+</html>
